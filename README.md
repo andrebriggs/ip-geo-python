@@ -8,6 +8,21 @@ This is a simple example of how to get more accurate location data from Azure Mo
 
 You can the Log Analytics feature in Azure Monitor to perform a query that can return IP addresses of requests amongst other metadata. Queries use the [Kusto](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/) langauge.
 
+## Example of output
+```csv
+country_code,sub_division,ip_count
+US,New Jersey,980
+US,Massachusetts,5
+KR,Seoul,3
+AU,Victoria,1
+HK,Sha Tin,1
+IN,Maharashtra,1
+KR,Gyeonggi-do,1
+TH,Bangkok,1
+TW,Taichung City,1
+TW,Taipei City,1
+```
+
 ## Thinking about Privacy Preservation
 
 Ideally, it woudl be great is features like Log Analytics could be HIPAA 
