@@ -1,6 +1,6 @@
 # Azure Log Analytics to IP to Geo
 
-This is a simple example of how to get more accurate location data from Azure Montior's [Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview) using [GeoIP2](https://github.com/maxmind/GeoIP2-python). The use of Azure Monitor isn't required, any list of IP addresses will work.
+This is a simple example of how to get more accurate location data from Azure Monitor's [Log Analytics](https://docs.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview) using [GeoIP2](https://github.com/maxmind/GeoIP2-python). The use of Azure Monitor isn't required, any list of IP addresses will work.
 
 ## Requirements
 
