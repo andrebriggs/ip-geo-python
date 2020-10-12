@@ -25,6 +25,11 @@ AzureDiagnostics
 ## Running the code
 Create a virtual environment and install requirements via `pip`.
 
+```console
+$ python3 -m venv env`
+$ pip install -r requirements.txt`
+```
+
 Run 
 ```console
 $ python geo_from_ip.py (path to IP CSV) (path to Database file)
@@ -47,7 +52,4 @@ TW,Taipei City,1
 
 ## Thinking about Privacy Preservation
 
-Ideally, it would be great is features like Log Analytics could be HIPAA 
-
-`python3 -m venv env`
-`pip install -r requirements.txt`
+Apparently Log Analytics is [HIPAA compliant](https://azure.microsoft.com/mediahandler/files/resourcefiles/microsoft-azure-compliance-offerings/Microsoft%20Azure%20Compliance%20Offerings.pdf) in the Azure Public and Government Clouds. In this example we are getting data from Azure CDN via Azure Monitor Log Analytics. When clients connect to on a CDN, they should know the privacy policy. If Log Analytics provided an option to disable [IP address](https://docs.microsoft.com/en-us/azure/cdn/enable-raw-logs#raw-logs-properties) logging or at least provide a less privileged view of the log data the privacy posture would be improved. This is especially true for fields such as Healthcare.
